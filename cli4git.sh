@@ -47,5 +47,31 @@ case $op in
 			*)
 		esac
 	;;
+	4)
+		echo "Enter the Commit Message"
+		read msg
+		git commit -m "${msg}"
+	;;
+	5)
+		echo
+		echo "1.To Push Into Same Branch"
+		echo "2.To Checkout the Branch"
+		echo
+		read br
+		case $br in
+			1)
+				echo "Enter the Branch Name"
+				read bn
+				git push origin "${bn}"
+			;;
+			2)
+				echo "Enter the Branch to Checkout"
+				read bnc
+				git checkout "${bnc}"
+				git push origin "${bnc}"
+			;;
+			*)
+		esac
+	;;
 	*)
 esac
