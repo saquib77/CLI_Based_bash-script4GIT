@@ -1,2 +1,2 @@
-# GUI_like_bash-script4GIT
-GUI Interface For Github in Terminal
+# CLI_like_bash-script4GIT
+CLI Interface For Github in Terminal
