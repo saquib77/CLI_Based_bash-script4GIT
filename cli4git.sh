@@ -16,6 +16,7 @@ echo "11.Git Merge"
 echo "12.Git Clone"
 echo "13.Git Remote Add"
 echo "14.Git Log"
+echo "15.Git Remove"
 read op
 case $op in
 	1)
@@ -111,6 +112,12 @@ case $op in
 	;;
 	14)
 		git log
+	;;
+	15)
+		echo "Enter the file name to remove"
+		read fname
+		git rm "${fname}"
+		git rm 
 	;;
 	*)
 esac
