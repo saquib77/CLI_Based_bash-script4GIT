@@ -116,8 +116,7 @@ case $op in
 	15)
 		echo "Enter the file name to remove"
 		read fname
-		git rm "${fname}"
-		git rm 
+		git rm -f "${fname}"
 	;;
 	*)
 esac
